@@ -22,6 +22,8 @@ body{
     width: 100%;
     height: 100%;
     background-color: var(--tom4);
+    background-image: url(../assets/imagens/BG.png);
+    background-repeat: repeat;
 }
 .container{
     width: 100%;
@@ -91,3 +93,7 @@ body{
     font-weight: normal;
     font-size: 15px;
 }
+
+@media (max-width: 980px) {
+    
+  }
