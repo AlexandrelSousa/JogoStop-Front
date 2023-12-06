@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
       {
-        "src": "./src/html/pin.html",
+        "src": "/src/html/pin.html",
         "use": "@vercel/static-build"
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "./src/html/pin.html"
+        "dest": "/src/html/pin.html"
       }
     ]
   }
