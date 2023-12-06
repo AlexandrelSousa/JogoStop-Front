@@ -4,32 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stop!</title>
+    <title>STOP!</title>
     <link rel="stylesheet" type="text/css" href="../css/game.css" media="screen" />
+    <link rel="shortcut icon" type="imagex/png" href="../assets/imagens/icon.ico">
 </head>
 <body>
     <div class="container">
         <div class="stop-nav-bar">
-            <label class="stop-nav-bar-time">0:00</label>
-            <label class="stop-nav-bar-letter">A</label>
-            <label class="stop-nav-bar-round">Rodada 1</label>
+            <label id="display" class="stop-nav-bar-time">0:00</label>
+            <label id="letter" class="stop-nav-bar-letter">?</label>
+            <label id="round" class="stop-nav-bar-round">Round ?</label>
         </div>
         <div class="stop-placar">
             <table>
                 <tbody>
                     <tr>
-                        <th>Ale</th>
-                        <th>Deb</th>
-                        <th>Marin</th>
-                        <th>AnaC</th>
-                        <th>TS</th>
+                        <th id="user1">user1</th>
+                        <th id="user2">user2</th>
+                        <th id="user3">user3</th>
+                        <th id="user4">user4</th>
+                        <th id="user5">user5</th>
                     </tr>
                     <tr>
-                        <th>200</th>
-                        <th>100</th>
-                        <th>100</th>
-                        <th>100</th>
-                        <th>120</th>
+                        <th id="placarUser1">000</th>
+                        <th id="placarUser2">000</th>
+                        <th id="placarUser3">000</th>
+                        <th id="placarUser4">000</th>
+                        <th id="placarUser5">000</th>
                     </tr>
                 </tbody>
             </table>
@@ -38,27 +39,35 @@
             <table>
                 <tbody>
                     <tr>
-                        <th><label>Object</label><input type="text"></th>
-                        <th><label>Verb</label><input type="text"></th>
+                        <th><label>Object</label><input type="text" id="inputObject"></th>
+                        <th><label>Verb</label><input type="text" id="inputVerb"></th>
                     </tr>
                     <tr>
-                        <th><label>Animal</label><input type="text"></th>
-                        <th><label>Fruit</label><input type="text"></th>
+                        <th><label>Animal</label><input type="text" id="inputAnimal"></th>
+                        <th><label>Fruit</label><input type="text" id="inputFruit"></th>
                     </tr>
                     <tr>
-                        <th><label>Country</label><input type="text"></th>
-                        <th><label>Profession</label><input type="text"></th>
+                        <th><label>Country</label><input type="text" id="inputCountry"></th>
+                        <th><label>Profession</label><input type="text" id="inputProfession"></th>
                     </tr>
                     <tr>
-                        <th><label>Body part</label><input type="text"></th>
-                        <th><label>Celebrity</label><input type="text"></th>
+                        <th><label>Body part</label><input type="text" id="inputBodyPart"></th>
+                        <th><label>Celebrity</label><input type="text" id="inputCelebrity"></th>
                     </tr>
                 </tbody>
             </table>
         </div>
         <div class="stop-button">
-            <button>STOP!</button>
+            <label id="pinNum">Pin: 0000</label>
+            <button id="startBtn">START!</button>
+            <button id="stopBtn" display="none" disabled>STOP!</button>
         </div>
     </div>
+    <script src="https://js.pusher.com/8.2.0/pusher.min.js"></script>
+        <script>
+        Pusher.logToConsole = true;
+        // Seu código Pusher aqui
+        </script>
+    <script type="text/javascript" src="../javaScript/game.js"></script>
 </body>
 </html>

@@ -2,8 +2,9 @@
 <html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
-        <title>Stop!</title>
+        <title>STOP!</title>
         <link rel="stylesheet" type="text/css" href="../css/pin.css" media="screen" />
+        <link rel="shortcut icon" type="imagex/png" href="../assets/imagens/icon.ico">
     </head>
     <body>
         <div class="container">
@@ -12,13 +13,19 @@
                 <h1>STOP!</h1>
             </div>
             <div class="menu-form">
-                <input type="text" placeholder="Game pin" class="menu-form-input">
-                <input type="text" placeholder="Nome" class="menu-form-input">
-                <button>Enter</button>
+                <input type="text" placeholder="Game pin" class="menu-form-input" id="gamePin">
+                <input type="text" placeholder="Nickname" class="menu-form-input" id="nickName">
+                <button id="enterBtn">Enter</button>
             </div>
             <div class="menu-create-new-room">
-                <label>Create new room</label>
+                <button id="newRoomBtn">Create new room</button>
             </div>
         </div>
+        <script src="https://js.pusher.com/8.2.0/pusher.min.js"></script>
+        <script>
+        Pusher.logToConsole = true;
+        // Seu código Pusher aqui
+        </script>
+        <script type="text/javascript" src="../javaScript/pin.js"></script>
     </body>
 </html>

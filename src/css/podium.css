@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "Super Milk";
+    src: url(../assets/fontes/Super\ Milk.ttf);
+}
+@font-face {
+    font-family: "Blue Style";
+    src: url(../assets/fontes/Blue\ Style.otf);
+}
+
+:root{
+    --tom1: #fafbfd;
+    --tom2: #f38c83;
+    --tom3: #eb0b30;
+    --tom4: #831332;
+    --tom5: #1b1a1f;
+    --tom6: #83f3a0;
+    --tom7: #f3d383;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--tom4);
+    background-image: url(../assets/imagens/BG.png);
+    background-repeat: repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-image: url(../assets/imagens/BG-Podium.svg);
+    width: 350px;
+    height: 100%;
+    box-shadow: 0px 0px 15px var(--tom5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
